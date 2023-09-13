@@ -1,0 +1,35 @@
+Data ::
+N_LOGINb $0
+USER 'S'
+USER 'B'
+USER '\0'
+PASS 'M'
+PASS 'U'
+PASS 'I'
+PASS 'T'
+PASS 'O'
+PASS 'S'
+PASS 'E'
+PASS 'G'
+PASS 'U'
+PASS 'R'
+PASS 'O'
+PASS '\o'
+STD_SUCCESS 'OPERAÇÃO BEM SUCEDIDA!\n'
+
+Stack ::
+
+[P_PASS]   // |P_PASS| = 15
+[P_USER]   // |P_USER| = 15
+[RBP LOGIN]
+[RIP LOGIN]
+Variaveis do for, esta usando so registrador?
+[RBP MAIN]
+
+
+Ideias:
+    Como temos a posição de acesso, talvez
+    conseguimos substituir o RBP de login
+    que aponta para main para acesso? 
+    Mas para colocar a bandeira seria precisso modificar o valor de STD_SUCCESS, como?
+    Talvez modificar a passagem de parametro de uma dos gets? dumpobj?
