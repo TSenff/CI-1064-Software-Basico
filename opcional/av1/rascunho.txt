@@ -28,6 +28,14 @@ Variaveis do for, esta usando so registrador?
 
 
 Ideias:
+    No 1º Login mudamos a senha sobreescrevendo o valor de STD_SUCCESS para "A Bandeira é minha"
+    Entrada 7 char para overflow na senha seguido da frase
+    "1234567A BANDEIRA É MINHA"
+
+    No segundo login mudamos o valor de retorno de LOGIN para acesso 
+    
+    
+    
     Como temos a posição de acesso, talvez
     conseguimos substituir o RBP de login
     que aponta para main para acesso? 
